@@ -2,43 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* IIT Kharagpur Induction 2025 Design System */
+/* Import Octin font for headings */
+@import url("https://fonts.googleapis.com/css2?family=Octin&display=swap");
+
+/* Indian Institute of Technology Kharagpur Induction 2025 Design System */
 
 @layer base {
   :root {
     /* IIT KGP Brand Colors */
-    --iit-blue: 210 100% 14%;           /* #002147 - Deep IIT Blue */
-    --iit-gold: 42 43% 63%;             /* #CFAE70 - IIT Gold */
-    --iit-copper: 25 50% 46%;           /* #B87333 - Copper accent */
-    --light-blue: 207 63% 94%;          /* #E6F1FA - Light blue background */
-    --soft-blue: 210 100% 97%;          /* #F0F8FF - Softer blue variant */
-    
-    /* Core Design System */
-    --background: 207 63% 94%;          /* Light blue gradient base */
-    --foreground: 210 100% 14%;         /* IIT Deep Blue for text */
+    --iit-blue: 210 100% 14%; /* #002147 - Deep IIT Blue */
+    --iit-gold: 42 43% 63%; /* #CFAE70 - IIT Gold */
+    --iit-copper: 25 50% 46%; /* #B87333 - Copper accent */
+    --light-blue: 207 63% 94%; /* #E6F1FA - Light blue background */
+    --soft-blue: 210 100% 97%; /* #F0F8FF - Softer blue variant */
 
-    --card: 0 0% 100%;                  /* White cards */
-    --card-foreground: 210 100% 14%;   /* IIT Blue text on cards */
+    /* Core Design System */
+    --background: 207 63% 94%; /* Light blue gradient base */
+    --foreground: 210 100% 14%; /* IIT Deep Blue for text */
+
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 210 100% 14%; /* IIT Blue text on cards */
 
     --popover: 0 0% 100%;
     --popover-foreground: 210 100% 14%;
 
-    --primary: 210 100% 14%;            /* IIT Blue primary */
-    --primary-foreground: 0 0% 100%;    /* White on primary */
+    --primary: 220 100% 20%; /* Darker blue primary */
+    --primary-foreground: 0 0% 100%; /* White on primary */
 
-    --secondary: 42 43% 63%;            /* IIT Gold secondary */
+    --secondary: 42 43% 63%; /* IIT Gold secondary */
     --secondary-foreground: 210 100% 14%; /* IIT Blue on gold */
 
-    --muted: 210 100% 97%;              /* Soft blue muted */
+    --muted: 210 100% 97%; /* Soft blue muted */
     --muted-foreground: 210 100% 14%;
 
-    --accent: 42 43% 63%;               /* Gold accent */
+    --accent: 42 43% 63%; /* Gold accent */
     --accent-foreground: 210 100% 14%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 207 45% 85%;              /* Subtle blue border */
+    --border: 207 45% 85%; /* Subtle blue border */
     --input: 207 45% 85%;
     --ring: 210 100% 14%;
 
@@ -124,7 +127,12 @@
     @apply bg-background text-foreground font-body;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading;
   }
 }

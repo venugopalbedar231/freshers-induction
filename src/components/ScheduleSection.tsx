@@ -1,142 +1,213 @@
-import { Clock, MapPin, Calendar } from 'lucide-react';
+import { Clock, MapPin, Calendar } from "lucide-react";
 
 const ScheduleSection = () => {
   const schedule = [
+    // Day 1 - July 25, 2025
     {
-      time: "8:30 AM - 9:00 AM",
-      activity: "Registration & Check-in",
-      venue: "Netaji Auditorium Foyer",
-      description: "Collect welcome kits, ID cards, and program materials"
+      date: "25/07/2025",
+      time: "09:30 AM - 11:00 AM",
+      activity: "Welcome Ceremony",
+      venue: "Netaji Auditorium and nearby facilities (All Students) Kalidas Auditorium (Parents)",
+      description: "Opening ceremony with welcome address",
     },
     {
-      time: "9:00 AM - 9:30 AM",
-      activity: "Welcome Address",
-      venue: "Netaji Auditorium",
-      description: "Opening ceremony with Director's welcome message"
+      date: "25/07/2025",
+      time: "11:00 AM - 11:15 AM",
+      activity: "History of Indian Institute of Technology Kharagpur - Film Show & IIT Today - Film Show",
+      venue: "Netaji Auditorium and nearby facilities",
+      description: "Documentary showcasing institute's legacy and current achievements",
     },
     {
-      time: "9:30 AM - 10:30 AM",
-      activity: "Institute Overview",
-      venue: "Netaji Auditorium",
-      description: "History, vision, and academic excellence of IIT Kharagpur"
+      date: "25/07/2025",
+      time: "11:15 AM - 12:00 PM",
+      activity: "Motivational Speaker",
+      venue: "Netaji Auditorium and nearby facilities (All Students) Kalidas Auditorium (Parents)",
+      description: "Inspirational talk for new students",
     },
     {
-      time: "10:30 AM - 11:00 AM",
-      activity: "Tea Break",
-      venue: "Auditorium Foyer",
-      description: "Networking opportunity with refreshments"
+      date: "25/07/2025",
+      time: "3:00 PM - 5:00 PM",
+      activity: "Visit to Department/School/Centres",
+      venue: "Respective Department buildings",
+      description: "Meet faculty and explore your academic department",
+    },
+
+    // Day 2 - July 26, 2025
+    {
+      date: "26/07/2025",
+      time: "10:00 AM - 10:20 AM",
+      activity: "Introduction to Academic Section",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Overview of academic procedures and policies",
     },
     {
-      time: "11:00 AM - 12:00 PM",
-      activity: "Department Orientation",
-      venue: "Respective Departments",
-      description: "Meet your department faculty and academic coordinators"
+      date: "26/07/2025",
+      time: "10:20 AM - 10:40 AM",
+      activity: "Introduction to Extra-Academic Activities",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Explore clubs, societies and extracurricular opportunities",
     },
     {
-      time: "12:00 PM - 1:00 PM",
-      activity: "Academic Procedures",
-      venue: "Departmental Halls",
-      description: "Course registration, timetables, and academic policies"
+      date: "26/07/2025",
+      time: "10:40 AM - 11:00 AM",
+      activity: "Talk about Computer & Informatics Centre (CIC)",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "IT infrastructure and computing facilities overview",
     },
     {
-      time: "1:00 PM - 2:00 PM",
-      activity: "Lunch Break",
-      venue: "Student Mess",
-      description: "Experience campus dining with fellow students"
+      date: "26/07/2025",
+      time: "11:00 AM - 11:20 AM",
+      activity: "Inspirational Talk",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Motivational session for academic excellence",
     },
     {
-      time: "2:00 PM - 4:00 PM",
-      activity: "Campus Tour",
+      date: "26/07/2025",
+      time: "11:20 AM - 12:00 PM",
+      activity: "Career Development Center",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Guidance on career planning and opportunities",
+    },
+    {
+      date: "26/07/2025",
+      time: "3:00 PM - 5:00 PM",
+      activity: "Campus Tour - Academic Area - Walking",
       venue: "Campus Wide",
-      description: "Guided tour of hostels, library, labs, and recreational facilities"
+      description: "Guided tour of academic buildings and facilities",
+    },
+
+    // Day 3 - July 27, 2025
+    {
+      date: "27/07/2025",
+      time: "10:00 AM - 10:20 AM",
+      activity: "Introduction to BC Roy Tech Hospital",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Information about BC Roy Technology Hospital services",
     },
     {
-      time: "4:00 PM - 4:30 PM",
-      activity: "Refreshment Break",
-      venue: "Technology Students' Gymkhana",
-      description: "Short break with snacks and beverages"
+      date: "27/07/2025",
+      time: "10:20 AM - 10:40 AM",
+      activity: "Student Welcome and Campus Life Details",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Dean - Student Affairs welcome and campus life guidance",
     },
     {
-      time: "4:30 PM - 6:00 PM",
-      activity: "Student Societies Showcase",
-      venue: "Open Air Theatre",
-      description: "Presentations by technical, cultural, and professional societies"
+      date: "27/07/2025",
+      time: "10:40 AM - 11:00 AM",
+      activity: "Introduction to Counselling Centre",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Mental health and counseling services coordination",
     },
     {
-      time: "6:00 PM - 7:00 PM",
-      activity: "Cultural Performances",
-      venue: "Open Air Theatre",
-      description: "Music, dance, and drama performances by student groups"
+      date: "27/07/2025",
+      time: "11:00 AM - 11:15 AM",
+      activity: "Session on Rajbhasha",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Information about official language policies",
     },
     {
-      time: "7:00 PM - 7:30 PM",
-      activity: "Closing Ceremony",
-      venue: "Open Air Theatre",
-      description: "Vote of thanks and final announcements"
-    }
+      date: "27/07/2025",
+      time: "11:15 AM - 11:30 AM",
+      activity: "Inspirational Talk",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Motivational session (Speaker TBD)",
+    },
+    {
+      date: "27/07/2025",
+      time: "11:30 AM - 12:00 PM",
+      activity: "Know Your Halls and Wardens - Do's and Don'ts",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Hostel life guidance coordinated by Dean HMC",
+    },
+
+    // Day 4 - July 28, 2025
+    {
+      date: "28/07/2025",
+      time: "10:00 AM - 10:40 AM",
+      activity: "Academic Structure, Research, Alumni Connect / Cell Introductions",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Introduction of all cells coordinated by Academic Deans",
+    },
+    {
+      date: "28/07/2025",
+      time: "10:40 AM - 11:00 AM",
+      activity: "Gymkhana and Facilities",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Sports and recreational facilities by President Gymkhana",
+    },
+    {
+      date: "28/07/2025",
+      time: "11:00 AM - 11:20 AM",
+      activity: "Introduction to Student Activities",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Student activities overview by Vice President Gymkhana",
+    },
+    {
+      date: "28/07/2025",
+      time: "11:20 AM - 12:00 PM",
+      activity: "Talk by Senior Security Officer, Indian Institute of Technology Kharagpur",
+      venue: "Netaji Auditorium (Group A) and Kalidas Auditorium (Group B)",
+      description: "Security related guidelines and campus safety",
+    },
+    {
+      date: "28/07/2025",
+      time: "3:00 PM - 7:00 PM",
+      activity: "Introduction to Tech, Sports and Welfare Societies, Cultural Societies & Cultural Program",
+      venue: "Various Venues",
+      description: "Society introductions and cultural performances",
+    },
   ];
 
   return (
-    <section id="schedule" className="py-16 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+    <section id='schedule' className='py-16 bg-background'>
+      <div className='container mx-auto px-6'>
+        <div className='max-w-6xl mx-auto'>
           {/* Header */}
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-iit-blue mb-6">
-              Event Schedule
+          <div className='text-center mb-12 animate-fade-in'>
+            <h2 className='text-3xl md:text-5xl font-heading font-bold text-iit-blue mb-6 uppercase'>
+              Induction Program Schedule
             </h2>
-            <p className="text-lg text-iit-blue/70 max-w-3xl mx-auto mb-8">
-              Detailed timeline for the Induction Program - July 25th, 2025
+            <p className='text-lg text-iit-blue/70 max-w-3xl mx-auto mb-8'>
+              Complete 4-day schedule for the Induction Program - July 25-28, 2025
             </p>
-            
-            {/* Date Highlight */}
-            <div className="bg-gradient-to-r from-iit-blue to-iit-gold text-white rounded-xl p-6 max-w-md mx-auto">
-              <div className="flex items-center justify-center space-x-3">
-                <Calendar className="w-6 h-6" />
-                <div>
-                  <p className="font-semibold">Friday</p>
-                  <p className="text-lg font-bold">July 25, 2025</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Desktop Table View */}
-          <div className="hidden md:block overflow-x-auto">
-            <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
-              <thead className="bg-iit-blue text-white">
+          <div className='hidden md:block overflow-x-auto'>
+            <table className='w-full bg-white rounded-xl shadow-lg overflow-hidden'>
+              <thead className='bg-iit-blue text-white'>
                 <tr>
-                  <th className="px-6 py-4 text-left font-heading font-bold">Time</th>
-                  <th className="px-6 py-4 text-left font-heading font-bold">Activity</th>
-                  <th className="px-6 py-4 text-left font-heading font-bold">Venue</th>
-                  <th className="px-6 py-4 text-left font-heading font-bold">Description</th>
+                  <th className='px-6 py-4 text-left font-heading font-bold'>Date</th>
+                  <th className='px-6 py-4 text-left font-heading font-bold'>Time</th>
+                  <th className='px-6 py-4 text-left font-heading font-bold'>Activity</th>
+                  <th className='px-6 py-4 text-left font-heading font-bold'>Venue</th>
                 </tr>
               </thead>
               <tbody>
                 {schedule.map((item, index) => (
-                  <tr 
-                    key={index} 
+                  <tr
+                    key={index}
                     className={`border-b border-gray-100 hover:bg-light-blue/30 transition-colors duration-200 ${
-                      index % 2 === 0 ? 'bg-gray-50/50' : 'bg-white'
-                    }`}
-                  >
-                    <td className="px-6 py-4">
-                      <div className="flex items-center text-iit-blue font-medium">
-                        <Clock className="w-4 h-4 mr-2 text-iit-gold" />
+                      index % 2 === 0 ? "bg-gray-50/50" : "bg-white"
+                    }`}>
+                    <td className='px-6 py-4'>
+                      <div className='flex items-center text-iit-blue font-medium'>
+                        <Calendar className='w-4 h-4 mr-2 text-iit-gold' />
+                        {item.date}
+                      </div>
+                    </td>
+                    <td className='px-6 py-4'>
+                      <div className='flex items-center text-iit-blue font-medium'>
+                        <Clock className='w-4 h-4 mr-2 text-iit-gold' />
                         {item.time}
                       </div>
                     </td>
-                    <td className="px-6 py-4 font-semibold text-iit-blue">
-                      {item.activity}
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center text-iit-blue/70">
-                        <MapPin className="w-4 h-4 mr-2 text-iit-gold" />
+                    <td className='px-6 py-4 font-semibold text-iit-blue'>{item.activity}</td>
+                    <td className='px-6 py-4'>
+                      <div className='flex items-center text-iit-blue/70'>
+                        <MapPin className='w-4 h-4 min-h-4 min-w-4 mr-2 text-iit-gold' />
                         {item.venue}
                       </div>
-                    </td>
-                    <td className="px-6 py-4 text-iit-blue/80">
-                      {item.description}
                     </td>
                   </tr>
                 ))}
@@ -145,57 +216,30 @@ const ScheduleSection = () => {
           </div>
 
           {/* Mobile Card View */}
-          <div className="md:hidden space-y-4">
+          <div className='md:hidden space-y-4'>
             {schedule.map((item, index) => (
-              <div key={index} className="iit-card p-6 animate-slide-up">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center text-iit-blue font-medium">
-                    <Clock className="w-4 h-4 mr-2 text-iit-gold" />
+              <div key={index} className='iit-card p-6 animate-slide-up'>
+                <div className='flex items-center justify-between mb-3'>
+                  <div className='flex items-center text-iit-blue font-medium text-sm'>
+                    <Calendar className='w-4 h-4 mr-2 text-iit-gold' />
+                    {item.date}
+                  </div>
+                  <div className='flex items-center text-iit-blue font-medium text-sm'>
+                    <Clock className='w-4 h-4 mr-2 text-iit-gold' />
                     {item.time}
                   </div>
                 </div>
-                
-                <h3 className="font-heading font-bold text-iit-blue text-lg mb-2">
-                  {item.activity}
-                </h3>
-                
-                <div className="flex items-center text-iit-blue/70 mb-3">
-                  <MapPin className="w-4 h-4 mr-2 text-iit-gold" />
-                  {item.venue}
+
+                <h3 className='font-heading font-bold text-iit-blue text-lg mb-2'>{item.activity}</h3>
+
+                <div className='flex items-start text-iit-blue/70 mb-3'>
+                  <MapPin className='w-4 h-4 mr-2 text-iit-gold mt-1 flex-shrink-0' />
+                  <span className='text-sm'>{item.venue}</span>
                 </div>
-                
-                <p className="text-iit-blue/80 text-sm">
-                  {item.description}
-                </p>
+
+                <p className='text-iit-blue/80 text-sm'>{item.description}</p>
               </div>
             ))}
-          </div>
-
-          {/* Important Notes */}
-          <div className="mt-12 bg-gradient-to-r from-iit-gold/10 to-iit-copper/10 rounded-xl p-8 border border-iit-gold/20">
-            <h3 className="text-xl font-heading font-bold text-iit-blue mb-4">
-              Schedule Notes
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6 text-iit-blue/80">
-              <div>
-                <h4 className="font-semibold mb-2">Important Reminders:</h4>
-                <ul className="space-y-1 text-sm">
-                  <li>• Arrive 15 minutes before each session</li>
-                  <li>• Carry your admission documents and ID</li>
-                  <li>• Wear comfortable shoes for campus tour</li>
-                  <li>• Stay hydrated throughout the day</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Schedule Updates:</h4>
-                <ul className="space-y-1 text-sm">
-                  <li>• Check notice boards for any changes</li>
-                  <li>• Follow volunteer instructions</li>
-                  <li>• Contact help desk for assistance</li>
-                  <li>• Keep emergency contacts handy</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
