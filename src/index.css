@@ -2,41 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* IIT Kharagpur Induction 2025 Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* IIT KGP Brand Colors */
+    --iit-blue: 210 100% 14%;           /* #002147 - Deep IIT Blue */
+    --iit-gold: 42 43% 63%;             /* #CFAE70 - IIT Gold */
+    --iit-copper: 25 50% 46%;           /* #B87333 - Copper accent */
+    --light-blue: 207 63% 94%;          /* #E6F1FA - Light blue background */
+    --soft-blue: 210 100% 97%;          /* #F0F8FF - Softer blue variant */
+    
+    /* Core Design System */
+    --background: 207 63% 94%;          /* Light blue gradient base */
+    --foreground: 210 100% 14%;         /* IIT Deep Blue for text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;                  /* White cards */
+    --card-foreground: 210 100% 14%;   /* IIT Blue text on cards */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 100% 14%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 100% 14%;            /* IIT Blue primary */
+    --primary-foreground: 0 0% 100%;    /* White on primary */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 42 43% 63%;            /* IIT Gold secondary */
+    --secondary-foreground: 210 100% 14%; /* IIT Blue on gold */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 100% 97%;              /* Soft blue muted */
+    --muted-foreground: 210 100% 14%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 42 43% 63%;               /* Gold accent */
+    --accent-foreground: 210 100% 14%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 207 45% 85%;              /* Subtle blue border */
+    --input: 207 45% 85%;
+    --ring: 210 100% 14%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--light-blue)), hsl(0 0% 100%));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--iit-blue)), hsl(var(--iit-gold)));
+    --gradient-soft: linear-gradient(180deg, hsl(var(--light-blue)), hsl(var(--soft-blue)));
+    --gradient-footer: linear-gradient(135deg, hsl(var(--iit-blue)), hsl(210 100% 8%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(var(--iit-blue) / 0.1);
+    --shadow-card: 0 8px 32px -4px hsl(var(--iit-blue) / 0.15);
+    --shadow-elegant: 0 12px 40px -8px hsl(var(--iit-blue) / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +121,93 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Hero gradient background */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  /* Card styling with IIT shadows */
+  .iit-card {
+    @apply bg-card rounded-xl;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+  }
+
+  .iit-card:hover {
+    box-shadow: var(--shadow-elegant);
+    transform: translateY(-2px);
+  }
+
+  /* Button variants */
+  .btn-iit-primary {
+    background: var(--gradient-primary);
+    @apply text-white rounded-lg px-6 py-3 font-medium;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-smooth);
+  }
+
+  .btn-iit-primary:hover {
+    box-shadow: var(--shadow-card);
+    transform: translateY(-1px);
+  }
+
+  /* Accent border */
+  .border-iit-gradient {
+    border-image: var(--gradient-primary) 1;
+  }
+
+  /* Smooth animations */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

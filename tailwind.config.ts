@@ -18,7 +18,19 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'heading': ['Playfair Display', 'serif'],
+				'body': ['Inter', 'sans-serif'],
+			},
 			colors: {
+				// IIT Kharagpur Brand Colors
+				'iit-blue': 'hsl(var(--iit-blue))',
+				'iit-gold': 'hsl(var(--iit-gold))',
+				'iit-copper': 'hsl(var(--iit-copper))',
+				'light-blue': 'hsl(var(--light-blue))',
+				'soft-blue': 'hsl(var(--soft-blue))',
+				
+				// Core Design System
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
