@@ -35,9 +35,7 @@ const CountdownSection = () => {
 
   const CountdownCard = ({ value, label }: { value: number; label: string }) => (
     <div className='iit-card p-6 text-center'>
-      <div className='text-4xl md:text-6xl font-heading font-bold text-iit-blue mb-2'>
-        {value.toString().padStart(2, "0")}
-      </div>
+      <div className='text-4xl md:text-6xl font-bold text-iit-blue mb-2'>{value.toString().padStart(2, "0")}</div>
       <div className='text-sm md:text-lg font-medium text-iit-blue/70 uppercase tracking-wider'>{label}</div>
     </div>
   );
@@ -47,15 +45,13 @@ const CountdownSection = () => {
       <div className='container mx-auto px-6'>
         {/* Header */}
         <div className='text-center mb-6 animate-fade-in'>
-          <h2 className='text-3xl md:text-5xl font-heading font-bold font-heading-octin text-iit-blue mb-6 uppercase'>
+          <h2 className='text-3xl md:text-5xl font-heading font-bold text-iit-blue mb-6 uppercase'>
             The countdown has begun!
           </h2>
           <p className='text-lg text-iit-blue/70 max-w-2xl mx-auto'>
             Get ready for an unforgettable experience at the Indian Institute of Technology Kharagpur.
           </p>
-          <p className='text-2xl text-iit-primary font-bold text-center mt-2 font-heading-octin'>
-            25th JULY 2025 09:00 AM
-          </p>
+          <p className='text-xl text-iit-primary font-bold text-center mt-2'>25th July 2025 09:00 AM</p>
         </div>
 
         {/* Countdown Grid */}

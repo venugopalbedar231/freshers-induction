@@ -20,6 +20,15 @@ const Index = () => {
     <div className='min-h-screen'>
       <Header />
       <HeroSection />
+      <div className='w-full bg-iit-blue py-2 flex items-center overflow-hidden min-h-[44px]'>
+        <marquee
+          behavior='scroll'
+          direction='left'
+          scrollamount='7'
+          className='text-white text-base font-semibold tracking-wide'>
+          Freshers must report to Netaji Auditorium by 9:00 AM on 25th July 2025 for the Welcome Ceremony.
+        </marquee>
+      </div>
       <CountdownSection />
       <AboutSection />
       <ActivitiesSection />

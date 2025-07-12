@@ -12,7 +12,7 @@ const HeroSection = () => {
     {
       image:
         "https://images.unsplash.com/photo-1620496009285-ac853df7b9b6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aWl0JTIwa2hhcmFncHVyfGVufDB8fDB8fHww",
-      title: "Welcome to Indian Institute of Technology Kharagpur",
+      title: "Welcome to IIT Kharagpur",
       subtitle: "Induction Program 2025",
     },
     {
@@ -85,7 +85,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className='relative z-10 text-center text-white max-w-4xl mx-auto px-6 animate-fade-in'>
-        <h1 className='text-5xl md:text-7xl font-heading font-bold mb-6 leading-tight'>{slides[currentSlide].title}</h1>
+        <h1 className='text-5xl md:text-7xl font-bold mb-6 leading-tight'>{slides[currentSlide].title}</h1>
         <p className='text-xl md:text-3xl font-medium mb-8 text-iit-gold'>{slides[currentSlide].subtitle}</p>
         <p className='text-lg md:text-xl mb-12 opacity-90 max-w-2xl mx-auto'>
           Join us for an exciting journey into one of India's premier technological institutes. Your adventure begins

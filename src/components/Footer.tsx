@@ -44,8 +44,8 @@ const Footer = () => {
                 <span className='text-iit-blue font-bold text-xl'>IIT</span>
               </div>
               <div>
-                <h3 className='text-2xl font-heading font-bold'>Indian Institute of Technology Kharagpur</h3>
-                <p className='text-iit-gold'>Induction Program 2025</p>
+                <h3 className='text-2xl font-heading font-bold uppercase'>Induction 2025</h3>
+                <p className='text-iit-gold'>Indian Institute of Technology Kharagpur</p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className='text-lg font-heading font-bold mb-6'>Quick Links</h4>
+            <h4 className='text-lg  font-bold mb-6'>Quick Links</h4>
             <nav className='space-y-3'>
               {quickLinks.map((link) => (
                 <button
@@ -94,7 +94,7 @@ const Footer = () => {
 
           {/* Important Dates */}
           <div>
-            <h4 className='text-lg font-heading font-bold mb-6'>Important Dates</h4>
+            <h4 className='text-lg  font-bold mb-6'>Important Dates</h4>
             <div className='space-y-4'>
               <div>
                 <p className='text-iit-gold font-semibold'>Induction Program</p>

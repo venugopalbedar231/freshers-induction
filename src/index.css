@@ -1,9 +1,15 @@
+/* Load Octin Sports font from public folder */
+@font-face {
+  font-family: "Octin Sports";
+  /* Path to Octin Sports font in public folder, spaces encoded */
+  src: url("/Octin%20Sports%20Rg.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Import Octin font for headings */
-@import url("https://fonts.googleapis.com/css2?family=Octin&display=swap");
 
 /* Indian Institute of Technology Kharagpur Induction 2025 Design System */
 
@@ -128,11 +134,7 @@
   }
 
   h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h2 {
     @apply font-heading;
   }
 }

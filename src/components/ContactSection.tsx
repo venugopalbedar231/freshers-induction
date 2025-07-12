@@ -50,14 +50,17 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id='contact' className='py-16 bg-soft-blue'>
+    <section id='contact' className='py-16 bg-background'>
       <div className='container mx-auto px-6'>
         <div className='max-w-6xl mx-auto'>
           {/* Header */}
           <div className='text-center mb-12 animate-fade-in'>
-            <h2 className='text-3xl md:text-5xl font-heading font-bold text-iit-blue mb-6'>Contact Information</h2>
+            <h2 className='text-3xl md:text-5xl font-heading font-bold text-iit-blue mb-6 uppercase'>
+              Contact Information
+            </h2>
             <p className='text-lg text-iit-blue/70 max-w-3xl mx-auto'>
-              Get in touch with our team for any questions or assistance regarding the induction program.
+              Still need help? Get in touch with our team for any questions or assistance regarding the induction
+              program.
             </p>
           </div>
 
@@ -69,7 +72,7 @@ const ContactSection = () => {
                 <div className='w-12 h-12 bg-iit-blue/10 rounded-full flex items-center justify-center mr-4'>
                   <Mail className='w-6 h-6 text-iit-gold' />
                 </div>
-                <h3 className='text-2xl font-heading font-bold text-iit-blue'>Help Desk</h3>
+                <h3 className='text-2xl  font-bold text-iit-blue'>Help Desk</h3>
               </div>
 
               <div className='space-y-4'>
@@ -101,7 +104,7 @@ const ContactSection = () => {
                 <div className='w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4'>
                   <Phone className='w-6 h-6 text-red-600' />
                 </div>
-                <h3 className='text-2xl font-heading font-bold text-iit-blue'>Emergency Contact</h3>
+                <h3 className='text-2xl  font-bold text-iit-blue'>Emergency Contact</h3>
               </div>
 
               <div className='space-y-4'>
@@ -127,17 +130,17 @@ const ContactSection = () => {
 
           {/* Volunteer Contacts */}
           <div className='mb-12'>
-            <h3 className='text-2xl font-heading font-bold text-iit-blue mb-6 text-center'>Volunteer Contacts</h3>
+            <h3 className='text-2xl  font-bold text-iit-blue mb-6 text-center'>Volunteer Contacts</h3>
 
             {/* Desktop Table */}
             <div className='hidden md:block overflow-x-auto'>
               <table className='w-full bg-white rounded-xl shadow-lg overflow-hidden'>
                 <thead className='bg-iit-blue text-white'>
                   <tr>
-                    <th className='px-6 py-4 text-left font-heading font-bold'>Date/Time</th>
-                    <th className='px-6 py-4 text-left font-heading font-bold'>Name</th>
-                    <th className='px-6 py-4 text-left font-heading font-bold'>Phone</th>
-                    <th className='px-6 py-4 text-left font-heading font-bold'>Role</th>
+                    <th className='px-6 py-4 text-left  font-bold'>Date/Time</th>
+                    <th className='px-6 py-4 text-left  font-bold'>Name</th>
+                    <th className='px-6 py-4 text-left  font-bold'>Phone</th>
+                    <th className='px-6 py-4 text-left  font-bold'>Role</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -186,7 +189,7 @@ const ContactSection = () => {
 
           {/* Officials Contact */}
           <div>
-            <h3 className='text-2xl font-heading font-bold text-iit-blue mb-6 text-center'>Key Officials</h3>
+            <h3 className='text-2xl  font-bold text-iit-blue mb-6 text-center'>Key Officials</h3>
 
             <div className='grid md:grid-cols-3 gap-6'>
               {officials.map((official, index) => (
@@ -195,7 +198,7 @@ const ContactSection = () => {
                     <User className='w-8 h-8 text-iit-gold' />
                   </div>
 
-                  <h4 className='font-heading font-bold text-iit-blue mb-2'>{official.name}</h4>
+                  <h4 className=' font-bold text-iit-blue mb-2'>{official.name}</h4>
                   <p className='text-sm text-iit-blue/70 mb-4'>{official.title}</p>
 
                   <div className='space-y-2 text-sm'>

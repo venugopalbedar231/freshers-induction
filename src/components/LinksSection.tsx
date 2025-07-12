@@ -61,7 +61,7 @@ const LinksSection = () => {
   ];
 
   return (
-    <section id='links' className='py-16 bg-soft-blue'>
+    <section id='links' className='py-16 bg-background'>
       <div className='container mx-auto px-6'>
         <div className='max-w-6xl mx-auto'>
           {/* Header */}
@@ -95,7 +95,7 @@ const LinksSection = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className='text-lg font-heading font-bold text-iit-blue mb-3 group-hover:text-iit-gold transition-colors duration-300'>
+                <h3 className='text-lg font-bold text-iit-blue mb-3 group-hover:text-iit-gold transition-colors duration-300'>
                   {link.title}
                 </h3>
 

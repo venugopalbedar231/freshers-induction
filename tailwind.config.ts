@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Octin", "serif"],
+        heading: ["Octin Sports", "serif"],
         body: ["Inter", "sans-serif"],
       },
       colors: {

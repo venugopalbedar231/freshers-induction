@@ -34,7 +34,7 @@ const ActivitiesSection = () => {
   ];
 
   return (
-    <section id='activities' className='py-16 bg-soft-blue'>
+    <section id='activities' className='py-16 bg-background'>
       <div className='container mx-auto px-6'>
         <div className='max-w-6xl mx-auto'>
           {/* Header */}
@@ -61,7 +61,7 @@ const ActivitiesSection = () => {
                     className={`w-12 h-12 rounded-lg bg-gradient-to-br ${activity.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <activity.icon className='w-6 h-6 text-white' />
                   </div>
-                  <h3 className='text-xl font-heading font-bold text-iit-blue'>{activity.title}</h3>
+                  <h3 className='text-xl font-bold text-iit-blue'>{activity.title}</h3>
                 </div>
 
                 {/* Activity Details */}

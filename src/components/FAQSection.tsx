@@ -91,7 +91,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id='faq' className='py-16 bg-background'>
+    <section id='faq' className='py-16 bg-soft-blue'>
       <div className='container mx-auto px-6'>
         <div className='max-w-4xl mx-auto'>
           {/* Header */}
@@ -115,7 +115,7 @@ const FAQSection = () => {
                 <button
                   onClick={() => toggleFAQ(index)}
                   className='w-full px-6 py-4 text-left flex items-center justify-between hover:bg-light-blue/30 transition-colors duration-200'>
-                  <h3 className='text-lg font-heading font-semibold text-iit-blue pr-4'>{faq.question}</h3>
+                  <h3 className='text-lg font-semibold text-iit-blue pr-4'>{faq.question}</h3>
                   {openIndex === index ? (
                     <ChevronUp className='w-5 h-5 text-iit-gold flex-shrink-0' />
                   ) : (

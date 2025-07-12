@@ -33,7 +33,7 @@ const AboutSection = () => {
           {/* Main Content Card */}
           <div className='iit-card p-8 md:p-12 mb-12 border-l-4 border-iit-blue'>
             <div className='mb-8'>
-              <h3 className='text-2xl font-heading font-bold text-iit-blue mb-4 flex items-center'>
+              <h3 className='text-2xl font-bold text-iit-blue mb-4 flex items-center'>
                 <GraduationCap className='w-8 h-8 mr-3 text-iit-gold' />
                 Why the Induction Program?
               </h3>
@@ -49,7 +49,7 @@ const AboutSection = () => {
             <div className='grid md:grid-cols-2 gap-8'>
               {/* Objectives */}
               <div>
-                <h4 className='text-xl font-heading font-bold text-iit-blue mb-6 flex items-center'>
+                <h4 className='text-xl font-bold text-iit-blue mb-6 flex items-center'>
                   <Target className='w-6 h-6 mr-3 text-iit-gold' />
                   Program Objectives
                 </h4>
@@ -65,7 +65,7 @@ const AboutSection = () => {
 
               {/* Activities */}
               <div>
-                <h4 className='text-xl font-heading font-bold text-iit-blue mb-6 flex items-center'>
+                <h4 className='text-xl font-bold text-iit-blue mb-6 flex items-center'>
                   <Users className='w-6 h-6 mr-3 text-iit-gold' />
                   Key Activities
                 </h4>

@@ -159,7 +159,7 @@ const ScheduleSection = () => {
   ];
 
   return (
-    <section id='schedule' className='py-16 bg-background'>
+    <section id='schedule' className='py-16 bg-soft-blue'>
       <div className='container mx-auto px-6'>
         <div className='max-w-6xl mx-auto'>
           {/* Header */}
@@ -177,10 +177,10 @@ const ScheduleSection = () => {
             <table className='w-full bg-white rounded-xl shadow-lg overflow-hidden'>
               <thead className='bg-iit-blue text-white'>
                 <tr>
-                  <th className='px-6 py-4 text-left font-heading font-bold'>Date</th>
-                  <th className='px-6 py-4 text-left font-heading font-bold'>Time</th>
-                  <th className='px-6 py-4 text-left font-heading font-bold'>Activity</th>
-                  <th className='px-6 py-4 text-left font-heading font-bold'>Venue</th>
+                  <th className='px-6 py-4 text-left font-bold'>Date</th>
+                  <th className='px-6 py-4 text-left font-bold'>Time</th>
+                  <th className='px-6 py-4 text-left font-bold'>Activity</th>
+                  <th className='px-6 py-4 text-left font-bold'>Venue</th>
                 </tr>
               </thead>
               <tbody>
@@ -230,7 +230,7 @@ const ScheduleSection = () => {
                   </div>
                 </div>
 
-                <h3 className='font-heading font-bold text-iit-blue text-lg mb-2'>{item.activity}</h3>
+                <h3 className='font-bold text-iit-blue text-lg mb-2'>{item.activity}</h3>
 
                 <div className='flex items-start text-iit-blue/70 mb-3'>
                   <MapPin className='w-4 h-4 mr-2 text-iit-gold mt-1 flex-shrink-0' />
