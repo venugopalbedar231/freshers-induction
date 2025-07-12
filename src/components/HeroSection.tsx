@@ -18,7 +18,7 @@ const HeroSection = () => {
     {
       image: "https://www.iitkgpfoundation.org/images/vault/2998.jpg",
       title: "Begin Your Journey",
-      subtitle: "25th July 2025, Netaji Auditorium",
+      subtitle: "25th July 2025",
     },
     {
       image: "https://images.indianexpress.com/2024/12/IIT-Kharagpur-3.jpg",
@@ -86,7 +86,13 @@ const HeroSection = () => {
       {/* Content */}
       <div className='relative z-10 text-center text-white max-w-4xl mx-auto px-6 animate-fade-in'>
         <h1 className='text-5xl md:text-7xl font-bold mb-6 leading-tight'>{slides[currentSlide].title}</h1>
-        <p className='text-xl md:text-3xl font-medium mb-8 text-iit-gold'>{slides[currentSlide].subtitle}</p>
+        <div className='flex justify-center mb-8'>
+          <div
+            className='px-8 py-4 rounded-2xl backdrop-blur-md bg-white/20 border border-white/30 shadow-lg inline-block'
+            style={{ WebkitBackdropFilter: "blur(12px)", backdropFilter: "blur(12px)" }}>
+            <p className='text-xl md:text-3xl font-semibold text-iit-blue m-0'>{slides[currentSlide].subtitle}</p>
+          </div>
+        </div>
         <p className='text-lg md:text-xl mb-12 opacity-90 max-w-2xl mx-auto'>
           Join us for an exciting journey into one of India's premier technological institutes. Your adventure begins
           here.
