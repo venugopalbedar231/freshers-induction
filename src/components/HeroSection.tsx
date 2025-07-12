@@ -58,7 +58,7 @@ const HeroSection = () => {
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? "opacity-30" : "opacity-0"
+              index === currentSlide ? "opacity-100" : "opacity-0"
             }`}>
             <img src={slide.image} alt={slide.title} className='w-full h-full object-cover' />
             <div className='absolute inset-0 bg-gradient-to-b from-iit-blue/20 to-iit-blue/40'></div>

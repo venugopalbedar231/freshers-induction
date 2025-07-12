@@ -220,11 +220,11 @@ const ScheduleSection = () => {
             {schedule.map((item, index) => (
               <div key={index} className='iit-card p-6 animate-slide-up'>
                 <div className='flex items-center justify-between mb-3'>
-                  <div className='flex items-center text-iit-blue font-medium text-sm'>
+                  <div className='flex items-center text-iit-blue font-medium text-xs'>
                     <Calendar className='w-4 h-4 mr-2 text-iit-gold' />
                     {item.date}
                   </div>
-                  <div className='flex items-center text-iit-blue font-medium text-sm'>
+                  <div className='flex items-center text-iit-blue font-medium text-xs'>
                     <Clock className='w-4 h-4 mr-2 text-iit-gold' />
                     {item.time}
                   </div>
