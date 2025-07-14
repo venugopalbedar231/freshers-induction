@@ -1,30 +1,19 @@
-import { Mail, Phone, Clock, MapPin, User } from "lucide-react";
+import { Mail, Phone, Clock, MapPin, User, Shield } from "lucide-react";
 
 const ContactSection = () => {
   const volunteers = [
+    // PG/RS Volunteers
     {
-      date: "July 24-25, 2025",
-      name: "Arjun Sharma",
-      phone: "+91 9876543210",
-      role: "Lead Coordinator",
+      name: "Konark Jaishy",
+      phone: "6395550593",
     },
     {
-      date: "July 24-25, 2025",
-      name: "Priya Patel",
-      phone: "+91 9876543211",
-      role: "Registration Desk",
+      name: "Harshiddhi Pathak",
+      phone: "9893887599",
     },
     {
-      date: "July 25, 2025",
-      name: "Rahul Kumar",
-      phone: "+91 9876543212",
-      role: "Campus Tour Guide",
-    },
-    {
-      date: "July 25, 2025",
-      name: "Sneha Gupta",
-      phone: "+91 9876543213",
-      role: "Technical Support",
+      name: "Kaushik Rakesh",
+      phone: "8083158366",
     },
   ];
 
@@ -32,20 +21,20 @@ const ContactSection = () => {
     {
       title: "General Secretary (Male), Student Welfare",
       name: "Tanush Agarwal",
-      email: "gs.welfare@iitkgp.ac.in",
-      phone: "+91 9876543221",
+      email: "gsectsg-welfare@hijli.iitkgp.ac.in",
+      phone: "+91 8309300581",
     },
     {
       title: "General Secretary (Female), Student Welfare",
       name: "Dnyaneshwari Ghare",
-      email: "gs.welfare@iitkgp.ac.in",
-      phone: "+91 3222 282020",
+      email: "gsectsg-welfare@hijli.iitkgp.ac.in",
+      phone: "+91 7499306778",
     },
     {
       title: "Vice President, Technology Students' Gymkhana",
       name: "Sudhagani Praneeth Kumar",
-      email: "vptsg@iitkgp.ac.in",
-      phone: "+91 9876543220",
+      email: "vptsg@hijli.iitkgp.ac.in",
+      phone: "+91 7416449233",
     },
   ];
 
@@ -67,62 +56,67 @@ const ContactSection = () => {
           {/* Main Contact Cards */}
           <div className='grid md:grid-cols-2 gap-8 mb-12'>
             {/* Help Desk */}
-            <div className='iit-card p-8 border-l-4 border-iit-blue'>
-              <div className='flex items-center mb-6'>
-                <div className='w-12 h-12 bg-iit-blue/10 rounded-full flex items-center justify-center mr-4'>
-                  <Mail className='w-6 h-6 text-iit-gold' />
-                </div>
-                <h3 className='text-2xl  font-bold text-iit-blue'>Help Desk</h3>
-              </div>
-
-              <div className='space-y-4'>
-                <div className='flex items-center'>
-                  <Mail className='w-4 h-4 text-iit-gold mr-3' />
-                  <span className='text-iit-blue/80'>induction2025@iitkgp.ac.in</span>
-                </div>
-                <div className='flex items-center'>
-                  <Phone className='w-4 h-4 text-iit-gold mr-3' />
-                  <span className='text-iit-blue/80'>+91 3222 282030</span>
-                </div>
-                <div className='flex items-start'>
-                  <Clock className='w-4 h-4 text-iit-gold mr-3 mt-1' />
-                  <div className='text-iit-blue/80'>
-                    <p>24th July: 8:00 AM - 8:00 PM</p>
-                    <p>25th July: 7:00 AM - 9:00 PM</p>
-                  </div>
-                </div>
-                <div className='flex items-center'>
-                  <MapPin className='w-4 h-4 text-iit-gold mr-3' />
-                  <span className='text-iit-blue/80'>Netaji Auditorium Foyer</span>
-                </div>
-              </div>
-            </div>
 
             {/* Emergency Contact */}
             <div className='iit-card p-8 border-l-4 border-red-500'>
               <div className='flex items-center mb-6'>
-                <div className='w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4'>
-                  <Phone className='w-6 h-6 text-red-600' />
+                <div className='w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4'>
+                  <Phone className='w-6 h-6 text-white' />
                 </div>
-                <h3 className='text-2xl  font-bold text-iit-blue'>Emergency Contact</h3>
+                <h3 className='text-2xl font-bold text-iit-blue'>24/7 Emergency Contacts</h3>
+              </div>
+
+              <div className='space-y-4'>
+                <div className='space-y-1'>
+                  <div>
+                    <strong>Security Control Room:</strong>
+                    <span className=''>03222282751, 03222281002, 03222281001</span>
+                  </div>
+                  <div>
+                    <strong>Quick Response Room:</strong> <span className=''>03222281002, 03222281003</span>
+                  </div>
+                  <div>
+                    <strong>Fire Emergency:</strong> <span className=''>03222255709</span>
+                  </div>
+                  <div>
+                    <strong>Medical Emergency (B.C. Roy Help Desk):</strong> <span className=''>03222281008</span>
+                  </div>
+                  <div>
+                    <strong>Local Police (Hijli Town Outpost):</strong> <span className=''>03222288060</span>
+                  </div>
+                  <div>
+                    <strong>24x7 Women Helpline Number:</strong> <span className=''>03222281010</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='iit-card p-8 border-l-4 border-iit-blue'>
+              <div className='flex items-center mb-6'>
+                <div className='w-12 h-12 bg-iit-blue rounded-lg flex items-center justify-center mr-4'>
+                  <Shield className='w-6 h-6 text-white' />
+                </div>
+                <h3 className='text-2xl  font-bold text-iit-blue'>Internal Complaints Committee</h3>
               </div>
 
               <div className='space-y-4'>
                 <div className='flex items-center'>
-                  <Phone className='w-4 h-4 text-red-500 mr-3' />
-                  <span className='text-iit-blue/80 font-semibold'>+91 3222 255221</span>
+                  <span className='w-8 h-8 bg-iit-blue rounded-lg flex items-center justify-center mr-3'>
+                    <Mail className='w-4 h-4 text-white' />
+                  </span>
+                  <span className='text-iit-blue/80'>icc@iitkgp.ac.in</span>
                 </div>
                 <div className='flex items-center'>
-                  <MapPin className='w-4 h-4 text-red-500 mr-3' />
-                  <span className='text-iit-blue/80'>Security Office, Main Gate</span>
+                  <span className='w-8 h-8 bg-iit-blue rounded-lg flex items-center justify-center mr-3'>
+                    <Phone className='w-4 h-4 text-white' />
+                  </span>
+                  <span className='text-iit-blue/80'>03222-281750</span>
                 </div>
-                <div className='bg-red-50 p-4 rounded-lg'>
-                  <p className='text-red-700 text-sm'>
-                    <strong>24/7 Emergency Services:</strong>
-                    <br />
-                    Medical emergencies, security concerns, or any urgent assistance needed during the induction
-                    program.
-                  </p>
+                <div className='flex items-center'>
+                  <span className='w-8 h-8 bg-iit-blue rounded-lg flex items-center justify-center mr-3'>
+                    <Phone className='w-4 h-4 text-white' />
+                  </span>
+                  <span className='text-iit-blue/80'>03222-283312 (Women Students' Council)</span>
                 </div>
               </div>
             </div>
@@ -130,14 +124,13 @@ const ContactSection = () => {
 
           {/* Volunteer Contacts */}
           <div className='mb-12'>
-            <h3 className='text-2xl  font-bold text-iit-blue mb-6 text-center'>Volunteer Contacts</h3>
+            <h3 className='text-2xl  font-bold text-iit-blue mb-6 text-center'>PG/RS Volunteers Contacts</h3>
 
             {/* Desktop Table */}
             <div className='hidden md:block overflow-x-auto'>
               <table className='w-full bg-white rounded-xl shadow-lg overflow-hidden'>
                 <thead className='bg-iit-blue text-white'>
                   <tr>
-                    <th className='px-6 py-4 text-left  font-bold'>Date/Time</th>
                     <th className='px-6 py-4 text-left  font-bold'>Name</th>
                     <th className='px-6 py-4 text-left  font-bold'>Phone</th>
                     <th className='px-6 py-4 text-left  font-bold'>Role</th>
@@ -150,16 +143,15 @@ const ContactSection = () => {
                       className={`border-b border-gray-100 hover:bg-light-blue/30 transition-colors duration-200 ${
                         index % 2 === 0 ? "bg-gray-50/50" : "bg-white"
                       }`}>
-                      <td className='px-6 py-4 text-iit-blue/80'>{volunteer.date}</td>
                       <td className='px-6 py-4'>
                         <div className='flex items-center'>
-                          <User className='w-4 h-4 text-iit-gold mr-2' />
+                          <User className='w-4 h-4 text-white mr-2' />
                           <span className='font-semibold text-iit-blue'>{volunteer.name}</span>
                         </div>
                       </td>
                       <td className='px-6 py-4'>
                         <div className='flex items-center'>
-                          <Phone className='w-4 h-4 text-iit-gold mr-2' />
+                          <Phone className='w-4 h-4 text-white mr-2' />
                           <span className='text-iit-blue/80'>{volunteer.phone}</span>
                         </div>
                       </td>
@@ -179,8 +171,8 @@ const ContactSection = () => {
                     <span className='text-xs text-iit-blue/60'>{volunteer.role}</span>
                   </div>
                   <div className='flex items-center justify-between'>
-                    <span className='text-sm text-iit-blue/80'>{volunteer.date}</span>
                     <span className='text-sm text-iit-blue/80'>{volunteer.phone}</span>
+                    <span className='text-xs text-iit-blue/60'>{volunteer.role}</span>
                   </div>
                 </div>
               ))}
@@ -194,20 +186,19 @@ const ContactSection = () => {
             <div className='grid md:grid-cols-3 gap-6'>
               {officials.map((official, index) => (
                 <div key={index} className='iit-card p-6 text-center'>
-                  <div className='w-16 h-16 bg-iit-blue/10 rounded-full flex items-center justify-center mx-auto mb-4'>
-                    <User className='w-8 h-8 text-iit-gold' />
+                  {/* Icon */}
+                  <div className='w-16 h-16 bg-iit-blue rounded-lg flex items-center justify-center mx-auto mb-4'>
+                    <User className='w-8 h-8 text-white' />
                   </div>
-
                   <h4 className=' font-bold text-iit-blue mb-2'>{official.name}</h4>
                   <p className='text-sm text-iit-blue/70 mb-4'>{official.title}</p>
-
                   <div className='space-y-2 text-sm'>
                     <div className='flex items-center justify-center'>
-                      <Mail className='w-3 h-3 text-iit-gold mr-2' />
+                      <Mail className='w-3 h-3 text-white mr-2' />
                       <span className='text-iit-blue/80'>{official.email}</span>
                     </div>
                     <div className='flex items-center justify-center'>
-                      <Phone className='w-3 h-3 text-iit-gold mr-2' />
+                      <Phone className='w-3 h-3 text-white mr-2' />
                       <span className='text-iit-blue/80'>{official.phone}</span>
                     </div>
                   </div>

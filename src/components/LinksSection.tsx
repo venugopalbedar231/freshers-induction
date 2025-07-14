@@ -53,9 +53,9 @@ const LinksSection = () => {
     },
     {
       icon: Heart,
-      title: "Counselling Center",
+      title: "SARTH",
       description: "Mental health and counselling services for students",
-      url: "#",
+      url: "https://sarth.iitkgp.ac.in/",
       color: "bg-primary",
     },
   ];
