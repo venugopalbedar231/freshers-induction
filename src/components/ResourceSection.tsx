@@ -17,6 +17,7 @@ const ResourceSection = () => {
     //   color: "bg-primary",
     // },
     {
+      //to be updated
       icon: Bus,
       title: "Bus Schedule",
       description: "Transportation timetables and routes within campus",
@@ -32,9 +33,9 @@ const ResourceSection = () => {
     },
     {
       icon: FileText,
-      title: "Academic Calendar 2025-26",
+      title: "Academic Calendar 2026-27",
       description: "Important academic dates and examination schedules (PDF)",
-      url: "https://www.iitkgp.ac.in/assets/pdf/AcademicCalendar2025-26.pdf",
+      url: "https://www.iitkgp.ac.in/assets/pdf/ACADEMIC_CALENDAR_2026_27.pdf",
       color: "bg-primary",
     },
     {
@@ -53,12 +54,13 @@ const ResourceSection = () => {
     },
     {
       icon: Heart,
-      title: "SARTH",
+      title: "Setu",
       description: "Mental health and counselling services for students",
-      url: "https://sarth.iitkgp.ac.in/",
+      url: "https://setu.iitkgp.ac.in/",
       color: "bg-primary",
     },
     {
+      //to be updated
       icon: Backpack,
       title: "Campus Tour",
       description: "Mental health and counselling services for students",

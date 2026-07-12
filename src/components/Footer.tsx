@@ -45,7 +45,7 @@ const Footer = () => {
                 <img src={logoWhite} alt='IIT KGP Logo' className='w-full h-full object-contain' />
               </div>
               <div>
-                <h3 className='text-2xl font-heading font-bold uppercase'>Induction 2025</h3>
+                <h3 className='text-2xl font-heading font-bold uppercase'>Induction 2026</h3>
                 <p className='text-iit-gold'>Indian Institute of Technology Kharagpur</p>
               </div>
             </div>
@@ -91,7 +91,7 @@ const Footer = () => {
             <div className='space-y-4'>
               <div>
                 <p className='text-iit-gold font-semibold'>Induction Program</p>
-                <p className='text-white/80 text-sm'>July 25-28, 2025</p>
+                <p className='text-white/80 text-sm'>July 25-27, 2026</p>
               </div>
               <div>
                 <p className='text-iit-gold font-semibold'>Program Venue</p>
@@ -122,7 +122,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <div className='text-center md:text-right text-white/60 text-sm'>
-              <p>&copy; 2025 Indian Institute of Technology Kharagpur</p>
+              <p>&copy; 2026 Indian Institute of Technology Kharagpur</p>
               <p>All rights reserved.</p>
             </div>
           </div>

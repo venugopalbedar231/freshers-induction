@@ -1,5 +1,5 @@
 import { Clock, MapPin, Calendar } from "lucide-react";
-
+//----------------to be updated----------------------- 
 const ScheduleSection = () => {
   const schedule = [
     // Day 1 - July 25, 2025
@@ -337,7 +337,7 @@ const ScheduleSection = () => {
               Induction Schedule
             </h2>
             <p className='text-lg text-iit-blue/70 max-w-3xl mx-auto mb-8'>
-              4-day schedule for the Induction Program - July 25-28, 2025
+              3-day schedule for the Induction Program - July 25-27, 2026
             </p>
           </div>
 

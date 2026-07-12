@@ -1,7 +1,7 @@
 import { Mail, Phone, Clock, MapPin, User, Shield } from "lucide-react";
-import praneethImg from "@/assets/Praneeth.jpg";
-import tanushImg from "@/assets/Tanush.jpg";
-import dnyaneshwariImg from "@/assets/Dnyaneshwari.jpg";
+import rajasImg from "@/assets/Rajas.jpg";
+import aayanImg from "@/assets/Aayan.jpg";
+import drashtiImg from "@/assets/Drashti.jpg";
 
 const ContactSection = () => {
   const volunteers = [
@@ -23,24 +23,24 @@ const ContactSection = () => {
   const officials = [
     {
       title: "Vice President, Technology Students' Gymkhana",
-      name: "Sudhagani Praneeth Kumar",
+      name: "Sangekar Rajas Madhav",
       email: "vptsg@hijli.iitkgp.ac.in",
-      phone: "+91 7416449233",
-      photo: praneethImg,
+      phone: "+91 9975261910",
+      photo: rajasImg,
     },
     {
       title: "General Secretary, Student Welfare",
-      name: "Tanush Agarwal",
+      name: "Aayan Nawaz",
       email: "gsectsg-welfare@hijli.iitkgp.ac.in",
-      phone: "+91 8309300581",
-      photo: tanushImg,
+      phone: "+91 9341035378",
+      photo: aayanImg,
     },
     {
       title: "General Secretary, Student Welfare",
-      name: "Dnyaneshwari Ghare",
+      name: "Drashti Gala",
       email: "gsectsg-welfare@hijli.iitkgp.ac.in",
-      phone: "+91 7499306778",
-      photo: dnyaneshwariImg,
+      phone: "+91 9619613642",
+      photo: drashtiImg,
     },
   ];
 
