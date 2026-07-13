@@ -11,8 +11,8 @@ const CountdownSection = () => {
   const [isExpired, setIsExpired] = useState(false);
 
   useEffect(() => {
-    // Set target date to July 25, 2025 at 09:00
-    const targetDate = new Date("2025-07-25T09:00:00").getTime();
+    // Set target date to July 25, 2026 at 09:00
+    const targetDate = new Date("2026-07-25T09:00:00").getTime();
     const timer = setInterval(() => {
       const now = new Date().getTime();
       const difference = targetDate - now;
