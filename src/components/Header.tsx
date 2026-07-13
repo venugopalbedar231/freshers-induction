@@ -29,7 +29,7 @@ const Header = () => {
               <img src={iitkgplogo} alt='IIT Kharagpur Logo' className='w-10 h-10 object-contain' />
             </div>
             <div>
-              <h1 className='text-xl md:text-2xl font-heading font-bold text-iit-blue uppercase'>Induction 2025</h1>
+              <h1 className='text-xl md:text-2xl font-heading font-bold text-iit-blue uppercase'>Induction 2026</h1>
               <p className='text-sm text-iit-blue/70 hidden md:block'>Indian Institute of Technology Kharagpur</p>
             </div>
           </div>

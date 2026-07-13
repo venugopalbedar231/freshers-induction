@@ -26,7 +26,7 @@ const Index = () => {
           direction='left'
           scrollamount='7'
           className='text-white text-base font-semibold tracking-wide'>
-          Freshers must report to Netaji Auditorium by 9:00 AM on 25th July 2025 for the Welcome Ceremony.
+          Freshers must report to Netaji Auditorium by 9:00 AM on 25th July 2026 for the Welcome Ceremony.
         </marquee>
       </div>
       <HeroSection />

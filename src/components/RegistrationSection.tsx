@@ -13,7 +13,7 @@ const RegistrationSection = () => {
             <h2 className='text-3xl md:text-5xl font-heading font-bold  mb-6 uppercase'>REGISTRATION</h2>
             <div className='w-24 h-1 bg-iit-gold mx-auto mb-8'></div>
             <h3 className='text-2xl md:text-3xl font-heading font-bold text-iit-gold mb-8'>
-              Admission through JEE (Adv.) 2025
+              Admission through JEE (Adv.) 2026
             </h3>
           </div>
 
@@ -23,6 +23,7 @@ const RegistrationSection = () => {
               <div className='bg-white p-4 rounded-2xl shadow-xl inline-block mb-6'>
                 <div className='w-54 h-54 mx-auto bg-white flex items-center justify-center border-2 border-gray-200 rounded-lg'>
                   {/* QR Code image */}
+                  {/* To be updated */}
                   <img src='/regqr.png' alt='Registration QR Code' className='w-48 h-48 object-contain' />
                 </div>
               </div>
