@@ -1,13 +1,13 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import CountdownSection from "@/components/CountdownSection";
-import RegistrationSection from "@/components/RegistrationSection";
+// import RegistrationSection from "@/components/RegistrationSection";
 import AboutSection from "@/components/AboutSection";
 import DividerSection from "@/components/DividerSection";
-import AnnouncementsSection from "@/components/AnnouncementsSection";
+// import AnnouncementsSection from "@/components/AnnouncementsSection";
 import ActivitiesSection from "@/components/ActivitiesSection";
 import ScheduleSection from "@/components/ScheduleSection";
-import SocietiesSection from "@/components/SocietiesSection";
+// import SocietiesSection from "@/components/SocietiesSection";
 import ResourceSection from "@/components/ResourceSection";
 import FAQSection from "@/components/FAQSection";
 import MapSection from "@/components/MapSection";
@@ -31,7 +31,7 @@ const Index = () => {
       </div>
       <HeroSection />
       <CountdownSection />
-      <RegistrationSection />
+      {/* <RegistrationSection /> */}
       <AboutSection />
       <ActivitiesSection />
       <ScheduleSection />
