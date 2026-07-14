@@ -54,7 +54,7 @@ const CountdownSection = () => {
           <p className='text-lg text-iit-blue/70 max-w-2xl mx-auto'>
             Get ready for an unforgettable experience at the Indian Institute of Technology Kharagpur.
           </p>
-          <p className='text-xl text-iit-primary font-bold text-center mt-2'>18th July 2025 09:00 AM</p>
+          <p className='text-xl text-iit-primary font-bold text-center mt-2'>18th July 2026 09:00 AM</p>
         </div>
 
         {/* Countdown Grid */}
