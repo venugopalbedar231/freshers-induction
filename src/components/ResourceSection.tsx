@@ -16,14 +16,15 @@ const ResourceSection = () => {
     //   url: "#",
     //   color: "bg-primary",
     // },
-    {
-      //to be updated
-      icon: Bus,
-      title: "Bus Schedule",
-      description: "Transportation timetables and routes within campus",
-      url: "/docs/welcome freshers slots (3).pdf",
-      color: "bg-primary",
-    },
+    
+    // {
+    //   //to be updated
+    //   icon: Bus,
+    //   title: "Bus Schedule",
+    //   description: "Transportation timetables and routes within campus",
+    //   url: "/docs/welcome freshers slots (3).pdf",
+    //   color: "bg-primary",
+    // },
     {
       icon: Map,
       title: "Campus Map",
@@ -59,14 +60,14 @@ const ResourceSection = () => {
       url: "https://setu.iitkgp.ac.in/",
       color: "bg-primary",
     },
-    {
-      //to be updated
-      icon: Backpack,
-      title: "Campus Tour",
-      description: "Mental health and counselling services for students",
-      url: "/docs/Campus Tour _ SWG.pdf",
-      color: "bg-primary",
-    },
+    // {
+    //   //to be updated
+    //   icon: Backpack,
+    //   title: "Campus Tour",
+    //   description: "Mental health and counselling services for students",
+    //   url: "/docs/Campus Tour _ SWG.pdf",
+    //   color: "bg-primary",
+    // },
   ];
 
   return (
