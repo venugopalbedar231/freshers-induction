@@ -133,7 +133,7 @@ const ScheduleSection = () => {
     },
     {
       date: "19-07-2026",
-      time: "11:40 am – 12:40 am",
+      time: "11:40 am – 12:40 pm",
       activity: "Cultural Program",
       venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students) Kalidas Auditorium (Parents)",
       description: "Vice President, TSG"
