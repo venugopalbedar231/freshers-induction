@@ -1,4 +1,4 @@
-import { FileText, Bus, Map, Globe, Users, BookOpen, Backpack, Heart, ExternalLink } from "lucide-react";
+import { FileText, Bus, Map, Globe, Users, BookOpen, Backpack, Heart, ExternalLink, Store } from "lucide-react";
 
 const ResourceSection = () => {
   const links = [
@@ -58,6 +58,13 @@ const ResourceSection = () => {
       title: "Setu",
       description: "Mental health and counselling services for students",
       url: "https://setu.iitkgp.ac.in/",
+      color: "bg-primary",
+    },
+    {
+      icon: Store,
+      title: "Brand Store",
+      description: "Official IIT Kharagpur merchandise for every proud KGPian",
+      url: "https://maps.app.goo.gl/R5vYantriwezA7Yz5",
       color: "bg-primary",
     },
     // {
