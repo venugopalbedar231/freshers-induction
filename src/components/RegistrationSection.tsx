@@ -47,16 +47,26 @@ const RegistrationSection = () => {
                   <Calendar className='w-6 h-6 text-iit-gold mr-3' />
                   <h4 className='text-xl font-bold '>Important Information</h4>
                 </div>
-                <ul className='space-y-4 '>
+                <ul className='space-y-4'>
                   <li className='flex items-start'>
                     <div className='w-2 h-2 bg-iit-gold rounded-full mt-2 mr-3 flex-shrink-0'></div>
                     <span>
-                      It is <strong className='text-iit-gold'>mandatory</strong> to book slot for Registration.
+                      Create your <strong className='text-iit-gold'>ERP Profile</strong> before coming to the campus.
                     </span>
                   </li>
+
                   <li className='flex items-start'>
                     <div className='w-2 h-2 bg-iit-gold rounded-full mt-2 mr-3 flex-shrink-0'></div>
-                    <span>For more information on registration & the documents required, please visit:</span>
+                    <span>
+                      Report at your allotted Hall of Residence one day before the admission date.
+                    </span>
+                  </li>
+
+                  <li className='flex items-start'>
+                    <div className='w-2 h-2 bg-iit-gold rounded-full mt-2 mr-3 flex-shrink-0'></div>
+                    <span>
+                      For detailed registration instructions and required documents, please visit:
+                    </span>
                   </li>
                 </ul>
                 <div className='rounded-lg'>
@@ -76,14 +86,21 @@ const RegistrationSection = () => {
                   <FileText className='w-6 h-6 text-iit-gold mr-3' />
                   <h4 className='text-xl font-bold '>ERP Profile Creation</h4>
                 </div>
-                <div className=' space-y-2'>
-                  <p>Candidates who have not yet created their ERP profile can visit:</p>
-                  <div className='rounded-lg '>
+                <div className='space-y-2'>
+                  <p>Create your ERP Profile through the sign-up process before coming to the campus.</p>
+
+                  <div className='rounded-lg'>
                     <div className='flex items-center mb-2'>
-                      <Clock className='w-4 h-4 text-iit-gold mr-2' />
-                      <strong className='text-iit-gold'>CIC Lab (Takshashila Building)</strong>
+                      <ExternalLink className='w-4 h-4 text-iit-gold mr-2' />
+                      <a
+                        href='https://erp.iitkgp.ac.in/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='text-iit-gold hover:underline'
+                      >
+                        https://erp.iitkgp.ac.in/
+                      </a>
                     </div>
-                    <p className='text-sm'>Timing: 10:00 AM to 6:00 PM</p>
                   </div>
                 </div>
               </div>
