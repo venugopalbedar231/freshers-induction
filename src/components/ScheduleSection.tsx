@@ -187,7 +187,7 @@ const ScheduleSection = () => {
     date:"26-07-2026", time:"5:00 pm - 7:00 pm",
     activity:"Introduction to Cultural Societies & Cultural Program",
     venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
-    description:"VP, TSG"
+    description:"Technology Students' Gymkhana"
   },
 
   // --- DAY 4: 27-07-2026 ---
@@ -213,7 +213,7 @@ const ScheduleSection = () => {
     date:"27-07-2026", time:"02:30 pm - 4:30 pm",
     activity:"Campus Tour- academic area",
     venue:"",
-    description:"VP, TSG"
+    description:"Student Welfare Group"
   }
 ];
 
