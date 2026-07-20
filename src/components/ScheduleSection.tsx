@@ -2,180 +2,220 @@ import { Clock, MapPin, Calendar } from "lucide-react";
 
 const ScheduleSection = () => {
  const schedule = [
-  // --- DAY 1: 18-07-2026 ---
+  // --- DAY 1: 24-07-2026 ---
   {
-    date: "18-07-2026",
-    time: "9:15 am - 9:30 am",
-    activity: "Invitation of Dignitaries to the Dias",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "Lighting of the Lamp"
-  },
-  {
-    date: "18-07-2026",
-    time: "9:30 am - 10:00 am",
-    activity: "Address by Director",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
+    date: "24-07-2026",
+    time: "4:00 pm - 5:00 pm",
+    activity: "Welcome address by the Director",
+    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students)",
     description: "Prof. Suman Chakraborty"
   },
   {
-    date: "18-07-2026",
-    time: "10:00 am - 10:05 am",
-    activity: "Setting the Context of the Induction Program",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "Chairperson, Induction Program 2026"
-  },
-  {
-    date: "18-07-2026",
-    time: "10:05 am - 10:20 am",
-    activity: "Address by Deputy Director",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "Prof. Rintu Banerjee"
-  },
-  {
-    date: "18-07-2026",
-    time: "10:20 am - 10:30 am",
-    activity: "Address by Dean Administration",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "Prof. Kamal Lochan Panigrahi"
-  },
-  {
-    date: "18-07-2026",
-    time: "10:30 am - 10:33 am",
-    activity: "Vote of Thanks",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "Co-Chairperson, Induction Program 2026"
-  },
-  {
-    date: "18-07-2026",
-    time: "10:34 am - 10:36 am",
-    activity: "National Anthem",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: ""
-  },
-  {
-    date: "18-07-2026",
-    time: "10:36 am - 10:50 am",
-    activity: "\"Birth of IIT System, IIT Kharagpur\" & IIT Today - Film Show",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "About the Heritage of IIT Kharagpur"
-  },
-  {
-    date: "18-07-2026",
-    time: "10:50 am - 11:05 am",
-    activity: "Break",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: ""
-  },
-  {
-    date: "18-07-2026",
-    time: "11:05 am - 11:50 am",
-    activity: "Deans – Introduction to Academic Activity",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "Coordinating Dean"
-  },
-  {
-    date: "18-07-2026",
-    time: "11:50 am - 12:05 pm",
-    activity: "Know Your Campus",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "Vice President, TSG"
-  },
-  {
-    date: "18-07-2026",
-    time: "12:05 pm - 12:20 pm",
-    activity: "Introduction to ICC and Gender Cell",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "Prof. Koel Chaudhury"
-  },
-  {
-    date: "18-07-2026",
-    time: "12:20 pm - 12:35 pm",
-    activity: "Know Your Halls and Wardens",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), S N Bose Auditorium (Parents)",
-    description: "Dean Hall Management"
-  },
-  {
-    date: "18-07-2026",
-    time: "12:35 pm - 3:00 pm",
-    activity: "Lunch Break",
-    venue: "Respective Halls",
-    description: ""
-  },
-  {
-    date: "18-07-2026",
-    time: "3:00 pm - 5:00 pm",
-    activity: "Visit to Department/School/Centres",
-    venue: "Respective Departments/Centres/Schools",
-    description: "Coordinated by Faculty Advisors and Heads"
-  },
-  {
-    date: "18-07-2026",
-    time: "7:30 pm - 10:00 pm",
-    activity: "Welcome Dinner for the New PG and Ph.D Students",
-    venue: "Gymkhana",
-    description: "Hosted by Respected Director Sir"
+    date: "24-07-2026",
+    time: "5:15 pm - 6:30 pm",
+    activity: "Director’s Address to the Parents and Interactions",
+    venue: "Kalidas Auditorium (Parents)",
+    description: "Director, Dean SA, Dean SWB, Dean HM, President TSG"
   },
 
-  // --- DAY 2: 19-07-2026 ---
+  // --- DAY 2: 25-07-2026 ---
   {
-    date: "19-07-2026",
-    time: "9:30 am - 10:10 am",
-    activity: "Library, CIC, ERP, Security, CDC and Other Necessary Facilities",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
-    description: "Dean Student Affairs"
+    date:"25-07-2026", time:"09:00 am - 09:15 am",
+    activity:"Invitation of Dignitaries to the Dias",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"Lighting the Lamp"
   },
   {
-    date: "19-07-2026",
-    time: "10:10 am - 10:40 am",
-    activity: "Wellbeing Activities on Campus",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
-    description: "Dean Student Wellbeing"
+    date:"25-07-2026", time:"09:15 am - 09:20 am",
+    activity:"Setting the Context of the Induction Program",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"Prof. Debarghya Chakraborty"
   },
   {
-    date: "19-07-2026",
-    time: "10:40 am - 10:55 am",
-    activity: "BCRTH and SPSMH Facilities",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
-    description: "Dr. I. Banerjee"
+    date:"25-07-2026", time:"09:20 am - 09:35 am",
+    activity:"Address by Deputy Director",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"Prof. Rintu Banerjee"
   },
   {
-    date: "19-07-2026",
-    time: "10:55 am - 11:25 am",
-    activity: "Introduction to SETU and THRIVE",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
-    description: "Prof. Uday Shankar"
+    date:"25-07-2026", time:"09:35 am - 09:50 am",
+    activity:"Address by Dean Administration",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"Prof. Kamal Lochan Panigrahi"
   },
   {
-    date: "19-07-2026",
-    time: "11:25 am - 11:40 am",
-    activity: "Introduction to SETU - Counselling Centre",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
-    description: "Mrs. Juliet Karmakar Mondol"
+    date:"25-07-2026", time:"09:50 am - 09:55 am",
+    activity:"Vote of Thanks",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"Prof. Arun Singh"
   },
   {
-    date: "19-07-2026",
-    time: "11:40 am - 12:40 pm",
-    activity: "Cultural Program",
-    venue: "Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
-    description: "Vice President, TSG"
+    date:"25-07-2026", time:"09:55 am - 10:00 am",
+    activity:"National Anthem",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:""
+  },
+  {
+    date:"25-07-2026", time:"10:00 am - 10:20 am",
+    activity:'"Birth of IIT system, IIT Kharagpur" - Film Show, IIT Today - Film Show',
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"About the Heritage of IIT Kharagpur"
+  },
+  {
+    date:"25-07-2026", time:"10:20 am - 11:00 am",
+    activity:"Library, CIC, ERP, Security and other necessary facilities",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"Dean Student Affairs"
+  },
+  {
+    date:"25-07-2026", time:"11:00 am - 11:30 am",
+    activity:"Wellbeing Activities on campus",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"Dean Student Wellbeing"
+  },
+  {
+    date:"25-07-2026", time:"11:30 am - 11:45 am",
+    activity:"Know your halls and Wardens",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"Dean Hall Management"
+  },
+  {
+    date:"25-07-2026", time:"11:45 am - 12:00 pm",
+    activity:"Address by VP, TSG",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:"Vice President, TSG"
+  },
+  {
+    date:"25-07-2026", time:"12:00 pm - 12:45 pm",
+    activity:"Cultural Performance",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:""
+  },
+  {
+    date:"25-07-2026", time:"1:15 pm - 3:00 pm",
+    activity:"Lunch Break",
+    venue:"Respective Halls for students",
+    description:""
+  },
+  {
+    date:"25-07-2026", time:"3:00 pm - 5:00 pm",
+    activity:"Visit to Department/School/Centres",
+    venue:"Respective Department buildings",
+    description:"Coordinated by Faculty advisors and Department Heads"
+  },
+  {
+    date:"25-07-2026", time:"7:30 pm - 10:00 pm",
+    activity:"Welcome Dinner for the New UG students",
+    venue:"Gymkhana",
+    description:"Hosted by Honourable Director"
   },
 
-  // --- DAY 10: 27-07-2026 ---
+  // --- DAY 3: 26-07-2026 ---
   {
-    date: "27-07-2026",
-    time: "7:00 am - 7:15 am",
-    activity: "Yoga and Wellness Performance",
-    venue: "Swami Vivekananda Wellness Centre",
-    description: "Prof. Seema Singh & Prof. Richa Chopra"
+    date:"26-07-2026", time:"9:30 am - 10:15 am",
+    activity:"Deans – Introduction to academic activity",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Coordinating Dean"
   },
   {
-    date: "27-07-2026",
-    time: "11:30 am - 12:30 pm",
-    activity: "Motivational Speaker",
-    venue: "Online",
-    description: ""
+    date:"26-07-2026", time:"10:15 am - 10:35 am",
+    activity:"Career Development Centre",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Prof. Sanjay Gupta"
+  },
+  {
+    date:"26-07-2026", time:"10:35 am - 10:50 am",
+    activity:"BCRTH and SPSMH Facilities",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Dr. I. Banerjee"
+  },
+  {
+    date:"26-07-2026", time:"10:50 am - 11:20 am",
+    activity:"Introduction to SETU and THRIVE",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Prof. Uday Shankar / Prof. Amita (Pathak) Mahanty"
+  },
+  {
+    date:"26-07-2026", time:"11:20 am - 11:35 am",
+    activity:"Introduction to SETU- Counselling Centre",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Mrs. Juliet Karmakar Mondol"
+  },
+  {
+    date:"26-07-2026", time:"11:35 am - 11:50 am",
+    activity:"Introduction to ICC and Gender cell",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Prof. Amita (Pathak) Mahanty"
+  },
+  {
+    date:"26-07-2026", time:"11:50 am - 12:00 pm",
+    activity:"Rajbhasha",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Dr. Rajeev Kumar Rawat"
+  },
+  {
+    date:"26-07-2026", time:"12:00 pm - 12:05 pm",
+    activity:"Animal Welfare",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Prof. Sudeshna Kolay"
+  },
+  {
+    date:"26-07-2026", time:"12:05 pm - 2:00 pm",
+    activity:"Lunch Break",
+    venue:"Respective Halls for students",
+    description:""
+  },
+  {
+    date:"26-07-2026", time:"2:00 pm - 3:00 pm",
+    activity:"Gymkhana and facilities- Student Activities, Welfare Societies, Sports and Games Societies, Technology Societies",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"President, TSG"
+  },
+  {
+    date:"26-07-2026", time:"3:00 pm - 4:00 pm",
+    activity:"Inspirational talk by Alumnus",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Invited Alumnus"
+  },
+  {
+    date:"26-07-2026", time:"4:00 pm - 5:00 pm",
+    activity:"Gymkhana and facilities- Student Activities, Welfare Societies, Sports and Games Societies, Technology Societies",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"President, TSG"
+  },
+  {
+    date:"26-07-2026", time:"5:00 pm - 7:00 pm",
+    activity:"Introduction to Cultural Societies & Cultural Program",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums",
+    description:"Technology Students' Gymkhana"
+  },
+
+  // --- DAY 4: 27-07-2026 ---
+  {
+    date:"27-07-2026", time:"7:00 am - 7:15 am",
+    activity:"Yoga and Wellness Performance",
+    venue:"Swami Vivekananda Wellness Centre",
+    description:"Prof. Seema Singh & Prof. Richa Chopra"
+  },
+  {
+    date:"27-07-2026", time:"10:00 am - 11:30 am",
+    activity:"Motivational speaker",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:""
+  },
+  {
+    date:"27-07-2026", time:"11:30 am - 12:30 pm",
+    activity:"Motivational speaker",
+    venue:"Netaji Auditorium, Raman & Bhatnagar Auditoriums (All Students), Kalidas Auditorium (Parents)",
+    description:""
+  },
+  {
+    date:"27-07-2026", time:"02:30 pm - 4:30 pm",
+    activity:"Campus Tour- academic area",
+    venue:"",
+    description:"Student Welfare Group"
   }
-  ];
+];
 
   return (
     <section id='schedule' className='py-16 bg-soft-blue'>
@@ -187,7 +227,7 @@ const ScheduleSection = () => {
               Induction Schedule
             </h2>
             <p className='text-lg text-iit-blue/70 max-w-3xl mx-auto mb-8'>
-              2-day schedule for the Induction Program - July 18-19, 2026
+              4-day schedule for the Induction Program - July 24-27, 2026
             </p>
           </div>
 

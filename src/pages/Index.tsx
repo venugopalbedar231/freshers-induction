@@ -13,6 +13,7 @@ import FAQSection from "@/components/FAQSection";
 import MapSection from "@/components/MapSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import RegistrationSection from "@/components/RegistrationSection";
 
 const Index = () => {
   const Divider = () => <div className='w-full h-px bg-iit-blue'></div>;
@@ -26,7 +27,7 @@ const Index = () => {
           direction='left'
           scrollamount='7'
           className='text-white text-base font-semibold tracking-wide'>
-          Freshers must report to Netaji Auditorium by 9:00 AM on 18th July 2026 for the Welcome Ceremony.
+          Freshers must report to Netaji Auditorium by 4:00 PM on 24th July 2026 for the Welcome Ceremony.
         </marquee>
       </div>
       <HeroSection />

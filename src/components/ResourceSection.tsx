@@ -67,6 +67,13 @@ const ResourceSection = () => {
       url: "https://maps.app.goo.gl/R5vYantriwezA7Yz5",
       color: "bg-primary",
     },
+    {
+      icon: FileText,
+      title: "Registration Process",
+      description: "Registration workflow for newly admitted UG students",
+      url: "/docs/UG_Guidelines2026.pdf",
+      color: "bg-primary",
+    },
     // {
     //   //to be updated
     //   icon: Backpack,
