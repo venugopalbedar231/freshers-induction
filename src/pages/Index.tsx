@@ -13,6 +13,7 @@ import FAQSection from "@/components/FAQSection";
 import MapSection from "@/components/MapSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import RegistrationSection from "@/components/RegistrationSection";
 
 const Index = () => {
   const Divider = () => <div className='w-full h-px bg-iit-blue'></div>;
@@ -31,11 +32,11 @@ const Index = () => {
       </div>
       <HeroSection />
       <CountdownSection />
-      {/* <RegistrationSection /> */}
+      <RegistrationSection />
       <AboutSection />
       <ActivitiesSection />
       <ScheduleSection />
-      <ResourceSection />
+      {/* <ResourceSection /> */}
       <FAQSection />
       <MapSection />
       <ContactSection />
