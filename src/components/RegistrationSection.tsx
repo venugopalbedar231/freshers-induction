@@ -2,7 +2,7 @@ import { Calendar, Clock, FileText, Wifi, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const RegistrationSection = () => {
-  const registrationUrl = "http://10.15.33.30/ugreg25";
+  const registrationUrl = "http://10.15.33.30/ugreg26";
 
   return (
     <section id='registration' className='py-16 bg-background'>
