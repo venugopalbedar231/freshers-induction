@@ -5,38 +5,38 @@ const schedule = [
   // --- DAY 1: 24-07-2026 ---
   {
     date: "24-07-2026",
-    time: "05:00 pm - 05:02 pm",
-    activity: "Opening of the Induction Program",
+    time: "05:00 pm - 05:03 pm",
+    activity: "Inauguration of the Induction Program 2026",
     venue: "Netaji Auditorium, S. N. Bose Auditorium, Raman & Bhatnagar Auditoriums (All Students)",
     description: "Prof. Debarghya Chakraborty"
   },
   {
     date: "24-07-2026",
-    time: "05:02 pm - 05:08 pm",
-    activity: "Lighting the Lamp",
+    time: "05:03 pm - 05:08 pm",
+    activity: "Vandana",
     venue: "Netaji Auditorium, S. N. Bose Auditorium, Raman & Bhatnagar Auditoriums (All Students)",
     description: ""
   },
   {
     date: "24-07-2026",
     time: "05:08 pm - 05:09 pm",
-    activity: "Inviting the Honourable Director for the Welcome Address",
+    activity: "Inviting the honorable Director Sir for the Welcome address",
     venue: "Netaji Auditorium, S. N. Bose Auditorium, Raman & Bhatnagar Auditoriums (All Students)",
     description: ""
   },
   {
     date: "24-07-2026",
-    time: "05:10 pm - 06:05 pm",
+    time: "05:10 pm - 06:00 pm",
     activity: "Welcome Address by the Director",
     venue: "Netaji Auditorium, S. N. Bose Auditorium, Raman & Bhatnagar Auditoriums (All Students)",
     description: "Prof. Suman Chakraborty"
   },
   {
     date: "24-07-2026",
-    time: "06:15 pm - 07:30 pm",
+    time: "06:15 pm - 07:00 pm",
     activity: "Director's Address to the Parents and Interactions",
     venue: "Kalidas Auditorium (Parents)",
-    description: "Director, Academic Deans, Dean SA, Dean SWB, Dean HM, President TSG"
+    description: "Director, Academic Deans, Dean SA, Dean SWB, Dean HM, Chairperson SETU, Co-chairperson SETU, President TSG"
   },
 
   // --- DAY 2: 25-07-2026 ---
@@ -124,13 +124,6 @@ const schedule = [
     venue: "Respective Departments/Centers/Schools",
     description: "Coordinated by Faculty Advisors and Heads"
   },
-  {
-    date: "25-07-2026",
-    time: "07:30 pm - 10:00 pm",
-    activity: "Welcome Dinner for the New UG Students",
-    venue: "Gymkhana",
-    description: "Hosted by Honourable Director Sir"
-  },
 
   // --- DAY 3: 26-07-2026 ---
   {
@@ -215,13 +208,13 @@ const schedule = [
     time: "04:00 pm - 06:30 pm",
     activity: "Gymkhana and Facilities, Introduction to Cultural Societies & Cultural Program",
     venue: "Netaji Auditorium, S. N. Bose Auditorium, Raman & Bhatnagar Auditoriums",
-    description: "President, TSG, Vice President, TSG"
+    description: "President, TSG, Technology Students' Gymkhana"
   },
 
   // --- DAY 4: 27-07-2026 ---
   {
     date: "27-07-2026",
-    time: "07:00 am - 07:15 am",
+    time: "07:00 am - 07:30 am",
     activity: "Yoga and Wellness Performance",
     venue: "Swami Vivekananda Wellness Centre",
     description: "Prof. Seema Singh & Prof. Richa Chopra"
@@ -242,10 +235,24 @@ const schedule = [
   },
   {
     date: "27-07-2026",
+    time: "12:30 pm - 02:30 pm",
+    activity: "Lunch Break",
+    venue: "Respective Halls",
+    description: ""
+  },
+  {
+    date: "27-07-2026",
     time: "02:30 pm - 04:30 pm",
     activity: "Campus Tour - Academic Area",
     venue: "",
-    description: "Vice President, TSG"
+    description: "Student Welfare Group"
+  },
+  {
+    date: "27-07-2026",
+    time: "07:30 pm - 10:00 pm",
+    activity: "Welcome Dinner for the New UG Students",
+    venue: "Gymkhana",
+    description: "Hosted by Honourable Director Sir"
   }
 ];
 
